@@ -1,9 +1,24 @@
 /*CREANDO VARIABLES PARA COLROES*/
 :root {
-    --azul-culpa: #4e92d3ec;
-    --rojo-culpa: #f44e42;
+    --azul-culpa: #96b7ec;
+    --rojo-culpa: #030303;
     --oscuro: #212529;
     --claro: #f8f9fa;
+}
+
+nav {
+    background-color: var(--azul-culpa);
+    padding: 10px 0;
+    border-bottom: 5px solid var(--oscuro);
+}
+
+footer {
+    background-color: var(--oscuro);
+    color: var(--claro);
+    padding: 20px 0;
+    border-top: 5px solid var(--azul-culpa);
+    margin-top: 50px;
+    width: 100%;
 }
 
 /*DANDO ESTILO A LAS OPCIONES DEL MENU*/
@@ -19,24 +34,30 @@ nav a {
 
 /*HOVER ES CUANDO COLOCAMOS EL MOUSE SOBRE UN ELEMENTO*/
 nav a:hover {
-    background-color: hsla(202, 100%, 50%, 0.137);
+    background-color: #e9887b;
     color: var(--oscuro);
 }
 
-
+/*AGREGAR ESTILOS A LAS ETIQUETAS H1, H2 Y H3*/
+h1,
+h2,
+h3 {
+    color: var(--azul-culpa);
+    font-weight: bold;
+}
 
 /*ESTILOS DEL HEADER DE LA WIKI*/
 .header-wiki {
-    background-color: var(--azul-culpa) ;
-    padding: 40px 20px;
+    background-color: var(--azul-culpa);
+    padding: 20px 15px;
     border-bottom: 5px solid var(--rojo-culpa);
     border-radius: 15px 15px 15px 15px; /*Bordes*/
-    margin-bottom: 30px;
 }
 
 /*ESTILOS DE LA IMAGEN DEL INDEX */
 .img-culpamia{
-    border: 4px solid paleturquoise;
+    border: 4px solid rgb(228, 222, 230);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15); /*SOMBRA*/
     border-radius: 10px;
     transition: transform 0.3s ease;
 }
@@ -45,17 +66,97 @@ nav a:hover {
     transform: scale(1.03);
 }
 
-.header-wiki{
-text-align: center;
+/*CAMBIOS APLICADOS*/
+h5 {
+    color: var(--oscuro);
+    font-weight: bold;
 }
 
-.personajes {
-    list-style: none;   /* quita las viñetas */
-    display: flex;      /* pone todo en fila */
-    gap: 20px;          /* espacio entre enlaces */
-    justify-content: center; /* centra el menú */
-    padding: 0;
-    margin: 0;
+.contenedor-principal {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 20px;
 }
+
+.footer {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.todo {
+    background-color: #c0dff177;
+    width: 85%;
+    margin: 20px auto;
+    min-height: calc(100vh - 65px);
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+
+.card-personaje {
+    background-color: var(--azul-culpa);
+    width: 10rem;
+    height: 12rem;
+    color: var(--oscuro);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    margin: 0 5px;
+    border-radius: 4px;
+    border: 2px solid var(--rojo-culpa);
+    transition: all 0.3s ease;
+}
+
+
+.card-personaje:hover {
+    transform: scale(1.03);
+    box-shadow: var(--azul-culpa) 0px 4px 15px;
+}
+
+.img-personaje {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    filter: drop-shadow(4px 4px 8px var(--oscuro));
+}
+
+.img-personaje img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    filter: drop-shadow(4px 4px 8px var(--oscuro));
+}
+
+.img-personaje img {
+    width: 100px;
+    height: auto;
+}
+
+.personaje {
+  background-color: #4285f4; /* color del cuadro */
+  padding: 10px;
+  margin: 10px;
+  width: 200px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.personaje img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card-personaje {
+  background-color: #96b7ec !important;
+  border-radius: 10px;
+}
+
+.card-personaje .card-title {
+  color: #1b1b1a; /
+}
+
+
+
+
+
 
 
