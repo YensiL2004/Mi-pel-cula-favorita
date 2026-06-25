@@ -1,9 +1,14 @@
-/*CREANDO VARIABLES PARA COLROES*/
+/*CREANDO VARIABLES PARA COLORES*/
 :root {
     --azul-culpa: #96b7ec;
     --rojo-culpa: #030303;
     --oscuro: #212529;
     --claro: #f8f9fa;
+}
+
+body {
+    background-color: #3f3d3d;
+    color: var(--claro);
 }
 
 nav {
@@ -42,7 +47,7 @@ nav a:hover {
 h1,
 h2,
 h3 {
-    color: var(--azul-culpa);
+    color: var(--oscuro);
     font-weight: bold;
 }
 
@@ -84,7 +89,7 @@ h5 {
 }
 
 .todo {
-    background-color: #c0dff177;
+    background-color: #f3eded;
     width: 85%;
     margin: 20px auto;
     min-height: calc(100vh - 65px);
